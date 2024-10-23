@@ -1,102 +1,47 @@
 # Página de Review de Produto | Fundamentos de React
 
-Nesse projeto, vamos praticar os fundamentos do React para construir a seção de reviews de um produto da loja de equipamentos de áudio Escutante.
+## 📚 Descrição do Projeto
 
-## 🤓 Antes de começar
+Este projeto foi desenvolvido durante um curso de React e visa criar uma interface interativa para a seção de avaliações de produtos da loja de equipamentos de áudio **Escutante**. O aplicativo permite que os usuários visualizem e adicionem reviews de maneira eficiente, utilizando uma API para gerenciar os dados.
 
-Esse projeto foca em te ensinar os fundamentos do React por meio da criação de uma interface funcional para exibir e adicionar reviews de um produto. Vamos utilizar uma API para carregar e enviar reviews, garantindo que os dados sejam persistentes.
+## 🌐 Acesse o Projeto
 
-Nós disponibilizamos um template inicial com a estrutura principal do site. Sua missão será criar a parte de reviews de acordo com o design fornecido.
+Você pode acessar a aplicação ao vivo aqui: [Projeto de Review de Produto](https://mp-review-de-produto-steel.vercel.app/)
 
-### Template inicial
+## 🤓 Estrutura do Repositório
 
-Nesse repositório você encontrará uma aplicação base feita em React + Vite. Explore os arquivos para entender como o projeto está estruturado.
+A estrutura do repositório é organizada da seguinte forma:
 
-#### Estrutura de pastas
 
-A estrutura de pastas do projeto é organizada da seguinte forma:
+O arquivo principal para implementação é `ReviewSection.jsx`, localizado na pasta `components/`. Você pode personalizar a estrutura e criar novos componentes conforme necessário.
 
-```
-  src/
-    assets/
-      (imagens usadas no projeto)
-    components/
-      (componentes usados no projeto)
-    App.jsx
-    main.jsx
-    index.css
-```
+## 📡 API Utilizada
 
-Dentro da pasta `components/` você encontrará o arquivo `ReviewSection.jsx` onde você deverá desenvolver sua solução. Fique a vontade para alterar a estrutura de pastas ou criar novos componentes quando julgar necessário.
+O projeto utiliza a API fornecida pelo **Codante** para gerenciar as avaliações. Os principais endpoints disponíveis são:
 
-### API
+- **GET** `https://apis.codante.io/api/reviews-api/reviews`: Recupera todas as avaliações registradas.
+- **POST** `https://apis.codante.io/api/reviews-api/reviews`: Adiciona uma nova avaliação ao sistema.
 
-Vamos utilizar a API fornecida pelo Codante para gerenciar as avaliações. Os seguintes endpoints estarão disponíveis:
+Para mais detalhes, consulte a [documentação da API](https://docs.apis.codante.io).
 
-- `GET https://apis.codante.io/api/reviews-api/reviews`: Retorna todas as avaliações registradas para o produto.
-- `POST https://apis.codante.io/api/reviews-api/reviews`: Adiciona uma nova avaliação ao banco de dados.
+## 🔨 Funcionalidades Implementadas
 
-Acesse a documentação da API em: 🔗 [https://docs.apis.codante.io](https://docs.apis.codante.io)
-
-## 🔨 Requisitos
-
-### Exibir reviews dos usuários
-
-- Ao carregar a página, deve ser feito um **fetch** para o endpoint `GET /reviews` da API para exibir as avaliações existentes.
-  - A lista de reviews pode conter:
-    - Nome do usuário
-    - Data do review
-    - Avaliação em estrelas
-    - Comentário
-
-### Formulário para adicionar reviews
-
-- Implemente um formulário que permita ao usuário adicionar um novo review.
-  - O formulário deve conter:
-    - Campo para o nome
-    - Campo para o comentário
-    - Seletor de estrelas para a avaliação
-    - Botão de envio
-- Ao submeter o formulário, faça uma requisição POST para o endpoint `POST /reviews` da API, enviando os dados da nova avaliação.
-
-### Estado e eventos
-
-- Utilize o `useState` para gerenciar o estado dos reviews.
-- Adicione eventos para capturar as mudanças nos campos do formulário e o clique do botão de envio.
-  - Ao submeter o formulário, o novo review deve ser adicionado à lista de reviews na interface, além de ser enviado para a API.
-
-### Renderização condicional
-
-- Caso não haja reviews, exiba uma mensagem de "Sem avaliações até o momento".
-
-### Listas com `map`
-
-- Utilize o método `map` para renderizar a lista de reviews dinamicamente.
-  - Cada review deve ter uma `key` única.
-
-### Responsividade
-
-- O design da página deve ser totalmente responsivo, adaptando-se a diferentes tamanhos de tela, desde dispositivos móveis até desktops.
-  - Use flexbox ou grid para organizar os elementos da interface de maneira fluida.
-  - Certifique-se de que o formulário e as listas de reviews fiquem adequados em diferentes resoluções.
-
-### Estilização
-
-- Adicione estilos à página:
-  - Estilos inline ou utilizando classes CSS.
-  - Utilize módulos CSS para estilos mais organizados.
+- **Exibição de Reviews:** Ao carregar a página, as avaliações existentes são exibidas.
+- **Formulário para Adição de Reviews:** Usuários podem adicionar novos reviews com campos para nome, comentário e avaliação em estrelas.
+- **Gerenciamento de Estado:** Utilização do **`useState`** para gerenciar o estado das avaliações.
+- **Renderização Condicional:** Mensagem exibida quando não há avaliações disponíveis.
+- **Responsividade:** Design adaptável a diferentes tamanhos de tela, utilizando **flexbox** ou **grid**.
+- **Estilização:** Estilos aplicados com CSS e módulos CSS.
 
 ## 🎨 Design Sugerido
 
-Disponibilizamos um [design sugerido no Figma](https://www.figma.com/community/file/1418749577351583982/mini-projeto-pagina-de-review-de-um-produto-fundamentos-de-react).
+O design foi inspirado por um modelo disponível no [Figma](https://www.figma.com/community/file/1418749577351583982/mini-projeto-pagina-de-review-de-um-produto-fundamentos-de-react).
 
-## 👉🏽 Sobre esse mini-projeto
-
-### O que você irá praticar:
+## 👉🏽 Habilidades Praticadas
 
 - Criação de componentes React e uso de props
-- Manipulação de estado e eventos com `useState` e `onChange`
+- Manipulação de estado e eventos com **`useState`**
 - Implementação de formulários simples
-- Fetch de dados de uma API com `useEffect`
+- Fetch de dados de uma API com **`useEffect`**
 - Renderização condicional e manipulação de listas
-- Estilização e responsividade utilizando CSS em React
+- Estilização e responsividade com CSS em React
