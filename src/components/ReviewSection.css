@@ -4,3 +4,21 @@
   text-decoration: underline;
   text-decoration-color: #6aea4acc;
 }
+.reviews-container{
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  margin-top: 46px;
+}
+
+.review-form-container{
+  margin-top: 46px;
+  padding: 16px;
+  padding-top: 46px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}

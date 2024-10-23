@@ -1,0 +1,23 @@
+.review{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 46px;
+    border-bottom: 1px solid #525252;
+    gap: 8px;
+}
+.review:last-child{
+    border-bottom: none;
+}
+.review-name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.review-date{
+    font-size: 12px;
+    font-weight: 300;
+    color: #949494;
+}
+.review-description{
+    font-size: 16px;
+    font-weight: 300;
+}
